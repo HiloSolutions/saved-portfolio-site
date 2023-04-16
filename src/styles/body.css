@@ -1,0 +1,119 @@
+.carousel-heading {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.carousel-heading h2,
+.carousel-heading span {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.carousel-heading span {
+  color: #44b8b8;
+  
+}
+
+
+:root{
+  --color-text: #616161;
+  --color-text-btn: #ffffff;
+  --card1-gradient-color1: rgb(100, 223, 223);
+  --card1-gradient-color2: rgb(78, 168, 222);
+  --card2-gradient-color1: rgb(78, 168, 222);
+  --card2-gradient-color2: rgb(94,96,206);
+  --card3-gradient-color1: #3f2b96;
+  --card3-gradient-color2: #a8c0ff;
+  --card4-gradient-color1: #11998e;
+  --card4-gradient-color2: #38ef7d;
+}
+
+
+
+.card-container {
+  width: 100vw;
+  padding: 5px 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.card-wrap{
+  width: 330px;
+  padding: 5px, 0px;
+  background: #fff;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  color: var(--color-text);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+              rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.card-wrap:hover{
+  transform: scale(1.1);
+}
+
+.card-header{
+  height: 200px;
+  width: 100%;
+  border-radius:8px;
+  display: grid;
+  place-items: center;
+  transform: scale(0.909);
+  transition: transform 0.2s ease-in-out
+}
+
+.card-header i{
+  color: #fff;
+  font-size: 72px;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color:rgb(23, 113, 119);
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.card-text{
+  text-align: center;
+  font-size: 14.5px;
+  margin-bottom: 20px;
+}
+
+.card-btn{
+  border: none !important;
+  color: #616771 !important;
+  margin-bottom: 15px !important;
+  text-transform: uppercase !important;
+}
+
+.card-header.one{
+  background: url('../images/screenshot-precisetracker.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.card-header.two{
+  background: url('../images/mealhub.png') no-repeat center center fixed;
+  background-size: cover;
+}
+.card-header.three{
+  background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+
