@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# My Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Project Version][version-image]][version-url]
+[![Frontend][Frontend-image]][https://img.shields.io/badge/FrontEnd-React-blue]
 
-## Available Scripts
 
-In the project directory, you can run:
+I kept my portfolio website simple, but added fun and professional animations to challenge myself. My portfolio is a space for new ideas and self-expression. My favorite feature is the header, which features a moving gradient created by constructing circles in React, applying physics principles for bouncing motion, enlarging them for overlap, and adding a blur effect to the canvas.
 
-### `npm start`
+## Author
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Lauren Johnston** 
+* *Initial work* - [saved-portfolio-site][https://github.com/HiloSolutions/saved-portfolio-site/tree/main] (Repository space)
+* *Released on* Netlify
+* *Hosted on* TBD
+* *My professional profile on* [LinkedIn][https://www.linkedin.com/in/lauren-e-johnston/]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Showcase
 
-### `npm test`
+This project was designed to demonstrate:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* ReactJS
+  * This frontend website is made using react.
+* Google API
+  * The contact form is configured using the google email API.
 
-### `npm run build`
+## Usage example
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![portfolio home](./images/screenshot-portfolio-home.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you are curious about the technologies I am most familiar with, you can view my skills on all pages.
+![portfolio skills](./images/screenshot-portfolio-skills.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+My path to becoming a developer is unconventional. However, my journey began long before I received my diploma. On this page, I'm not just sharing my resume experience, but also the story of how I decided to become a developer after working in startups and on development teams for many years.
+![portfolio timeline](./images/screenshot-portfolio-timeline.png)
 
-### `npm run eject`
+Go to the 'Portfolio' page to see my projects!
+![portfolio projects](./images/screenshot-portfolio-projects.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+GitHub is a great platform for showcasing my projects, but I wanted my website to present them in a way that's easy for people who aren't familiar with it. By clicking the "view details" button on each portfolio card, you can see the stack I used and a description of the project.
+![portfolio project description](./images/screenshot-portfolio-project-description.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can send me an email on my website. The contact form is found at the bottom of each page.
+![portfolio contact](./images/screenshot-portfolio-contact.png)
