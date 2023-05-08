@@ -63,8 +63,8 @@ const HomePage = () => {
   return (
     <div>
       <NavBar />
-      <Header />
       <SideBar />
+      <Header />
       <div className='page-body'
         style={{ top: top }}
       >

@@ -78,21 +78,13 @@ const AboutPage = () => {
 
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div>
       <NavBar />
       <SideBar />
       <Header />
       <div
-        style={{
-          position: 'absolute',
-          width: '100%',
-          top: top,
-          zIndex: 100,
-          backgroundColor: 'rgb(255, 255, 255)',
-          overflow: 'auto',
-          padding: '0 20px',
-          boxShadow: '0 1px 8px rgba(0,0,0,0.3)'
-        }}
+        className='page-body'
+        style={{ top: top }}
       >
         <div className="carousel-heading">
           <h2>my<span>Story</span></h2>

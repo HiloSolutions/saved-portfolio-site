@@ -27,10 +27,10 @@ const PortfolioPage = () => {
   }, []);
 
   const keys = [];
-  
+
   const buildCards = Object.keys(data).map((key) => {
     const item = data[key];
-    
+
     keys.push(key)
 
     let classNameHeader = 'card-header '
@@ -68,28 +68,11 @@ const PortfolioPage = () => {
       <SideBar />
       <Header />
       <div
-        style={{
-          position: 'absolute',
-          width: '100vw',
-          top: top,
-          zIndex: 100,
-          backgroundColor: 'rgb(255, 255, 255)',
-          overflow: 'auto',
-          height: '100vh',
-          minHeight: '100% !important',
-          padding: '0 20px',
-          boxShadow: '0 1px 8px rgba(0,0,0,0.3)'
-        }}
+        className='page-body'
+        style={{ top: top }}
       >
-        <section
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            flexDirection: 'column',
-            marginTop: '20px'
-          }}
-        >
 
+        <div>
           <div className="carousel-heading">
             <h2>my <span>Projects</span></h2>
           </div>
@@ -99,16 +82,14 @@ const PortfolioPage = () => {
           <div className="card-container">
             {buildCards}
           </div>
+        </div>
 
-        </section>
-       
         <SkillsBox />
-        <ContactForm variant='filled'/>
-
+        <ContactForm variant='filled' />
 
       </div>
     </div>
   )
-}
+};
 
-export default PortfolioPage
+export default PortfolioPage;
