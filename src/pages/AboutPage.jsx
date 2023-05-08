@@ -3,6 +3,7 @@ import TypingAnimation from '../components/TypedText';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import SideBar from '../components/SideBar';
+import SkillsBox from '../components/SkillsBox';
 import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
 //import SubSectionStart from '../components/elements/SubSectionStart';
@@ -77,21 +78,13 @@ const AboutPage = () => {
 
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div>
       <NavBar />
       <SideBar />
       <Header />
       <div
-        style={{
-          position: 'absolute',
-          width: '100vw',
-          top: top,
-          zIndex: 100,
-          backgroundColor: 'rgb(255, 255, 255)',
-          overflow: 'auto',
-          padding: '0 20px',
-          boxShadow: '0 1px 8px rgba(0,0,0,0.3)'
-        }}
+        className='page-body'
+        style={{ top: top }}
       >
         <div className="carousel-heading">
           <h2>my<span>Story</span></h2>
@@ -106,12 +99,8 @@ const AboutPage = () => {
           </VerticalTimeline>
         </div>
 
-        <div className='skills-box'>
-          <ContactForm
-            ref={contactRef}
-            variant="outlined"
-          />
-        </div>
+        <SkillsBox />
+        <ContactForm variant='filled'/>
       </div>
 
     </div>

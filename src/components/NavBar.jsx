@@ -33,7 +33,7 @@ export default function NavBar( {executeScroll} ) {
   
   return shouldRender ? (
     <AppBar
-      position="relative"
+      //position="relative"
       style={{
         fontWeight: 600,
         padding: '10px 0px',
@@ -41,7 +41,7 @@ export default function NavBar( {executeScroll} ) {
         backgroundColor: '#44B8B8',
         boxShadow: '0 1px 8px rgba(0,0,0,0.3)',
         zIndex: 100,
-        width: '100vw'
+        width: '100%'
       }}
     >
       <Box

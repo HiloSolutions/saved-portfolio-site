@@ -136,13 +136,14 @@ function Header() {
   return shouldRender ? (
     <canvas ref={canvasRef}
       style={{
-        width: '100vw',
+        width: '100%',
+        maxWidth: '100%',
         filter: 'blur(90px)',
       }} />
   ): <canvas ref={canvasRef}
   style={{
-    width: '100vw',
-    maxWidth: '100vw',
+    width: '100%',
+    maxWidth: '100%',
     filter: 'blur(90px)',
   }} />;
 }

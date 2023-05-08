@@ -1,28 +1,17 @@
-.services-article {
-  transition: all .2s ease-in-out;
-}
+
 
 .services-article:hover{
   transform: scale(1.05);
 }
 
-.home-article {
-  transition: all .2s ease-in-out;
-}
-
-.home-article:hover{
-  transform: scale(1.05);
-}
-
-.home-picture {
-  transition: all .2s ease-in-out;
-}
-
-.home-picture:hover{
-  transform: scale(1.05);
+.skills-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-box {
+  width: 92.5%;
   margin-top: 5em;
   margin-bottom: 1em;
   background-color: #eee;

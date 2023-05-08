@@ -35,7 +35,7 @@ const ContactForm = ({ variant }) => {
 
   const styles = {
     contactSection: {
-      width: '100vw',
+      width: '100%',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -74,11 +74,14 @@ const ContactForm = ({ variant }) => {
 
 
   return (
-    <div>
+    <>
       <div className="carousel-heading">
         <h2>Contact <span>Me</span></h2>
       </div>
-      <Box component="form" sx={{ '& .MuiTextField-root': { m: 1 } }} onSubmit={sendEmail}>
+      <Box
+        component="form"
+        sx={{ '& .MuiTextField-root': { m: 1 } }}
+        onSubmit={sendEmail}>
         <div style={styles.contactSection}>
           <div style={styles.container}>
             <div style={styles.row}>
@@ -194,7 +197,7 @@ const ContactForm = ({ variant }) => {
 
 
       </Box>
-    </div>
+    </>
 
   );
 }
