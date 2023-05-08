@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import SideBar from '../components/SideBar';
+import SkillsBox from '../components/SkillsBox';
 import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
 import data from '../scripts/portfolioItems';
@@ -100,9 +101,9 @@ const PortfolioPage = () => {
           </div>
 
         </section>
-        <div className='skills-box'>
-          <ContactForm variant="outlined" />
-        </div>
+       
+        <SkillsBox />
+        <ContactForm variant='filled'/>
 
 
       </div>

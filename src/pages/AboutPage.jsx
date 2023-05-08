@@ -3,6 +3,7 @@ import TypingAnimation from '../components/TypedText';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import SideBar from '../components/SideBar';
+import SkillsBox from '../components/SkillsBox';
 import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
 //import SubSectionStart from '../components/elements/SubSectionStart';
@@ -84,7 +85,7 @@ const AboutPage = () => {
       <div
         style={{
           position: 'absolute',
-          width: '100vw',
+          width: '100%',
           top: top,
           zIndex: 100,
           backgroundColor: 'rgb(255, 255, 255)',
@@ -106,12 +107,8 @@ const AboutPage = () => {
           </VerticalTimeline>
         </div>
 
-        <div className='skills-box'>
-          <ContactForm
-            ref={contactRef}
-            variant="outlined"
-          />
-        </div>
+        <SkillsBox />
+        <ContactForm variant='filled'/>
       </div>
 
     </div>
