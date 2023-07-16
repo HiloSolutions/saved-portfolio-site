@@ -16,7 +16,8 @@ const PortfolioItemModal = ({
   frontEnd,
   backEnd,
   leveragedSoftware,
-  github
+  github,
+  cta
 }) => {
 
   const [open, setOpen] = useState(false);
@@ -34,7 +35,7 @@ const PortfolioItemModal = ({
     bgcolor: "#fff",
     borderRadius: "0.75em",
     boxShadow: 24,
-    overflow:'scroll',
+    overflow: 'scroll',
     padding: 4,
   };
 
@@ -58,9 +59,9 @@ const PortfolioItemModal = ({
   return (
 
     <div>
-      <Button 
-      className='card-btn' 
-      onClick={handleOpen}
+      <Button
+        className='card-btn'
+        onClick={handleOpen}
       >View Details</Button>
       <Modal
         open={open}
@@ -109,38 +110,66 @@ const PortfolioItemModal = ({
             alignItems="center"
             container spacing={2}
           >
-            <Grid item xs={3}>
-              <Item sx={{ fontSize: '14px' }}>Front-end</Item>
-            </Grid>
-            <Grid item xs={9}>
-              <Item>{buildChips(frontEnd)}</Item>
-            </Grid>
 
-            <Grid item xs={3}>
-              <Item sx={{ fontSize: '14px' }}>Back-end</Item>
-            </Grid>
-            <Grid item xs={9}>
-              <Item>{buildChips(backEnd)}</Item>
-            </Grid>
+            {frontEnd && (
+              <>
+                <Grid item xs={3}>
+                  <Item sx={{ fontSize: '14px' }}>Front-end</Item>
+                </Grid>
+                <Grid item xs={9}>
+                  <Item>{buildChips(frontEnd)}</Item>
+                </Grid>
+              </>
 
-            <Grid item xs={3}>
-              <Item sx={{ fontSize: '14px' }}>Leveraged Software</Item>
-            </Grid>
-            <Grid item xs={9}>
-              <Item>{buildChips(leveragedSoftware)}</Item>
-            </Grid>
+            )}
+
+            {backEnd && (
+              <>
+                <Grid item xs={3}>
+                  <Item sx={{ fontSize: '14px' }}>Back-end</Item>
+                </Grid>
+                <Grid item xs={9}>
+                  <Item>{buildChips(backEnd)}</Item>
+                </Grid>
+              </>
+            )}
+
+            {leveragedSoftware && (
+              <>
+                <Grid item xs={3}>
+                  <Item sx={{ fontSize: '14px' }}>Leveraged Software</Item>
+                </Grid>
+                <Grid item xs={9}>
+                  <Item>{buildChips(leveragedSoftware)}</Item>
+                </Grid>
+              </>
+            )}
 
           </Grid>
 
-          <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 4 }}>
-            <CTAButton 
-            url={github}
-            icon={<FaGithub />}
-            label='GitHub'
-            />
 
-            
-          </Typography>
+          {github && (
+            <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 4 }}>
+              <CTAButton
+                url={github}
+                icon={<FaGithub />}
+                label='GitHub'
+              />
+            </Typography>
+          )}
+
+          {cta && (
+            <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 4 }}>
+              <CTAButton
+                url={cta}
+                label='Go to site'
+              />
+            </Typography>
+          )}
+
+
+
+
         </Box>
       </Modal>
     </div>

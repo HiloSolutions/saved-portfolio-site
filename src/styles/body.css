@@ -167,17 +167,23 @@
   text-transform: uppercase !important;
 }
 
-.card-header.one {
+.card-header.two {
   background: url('../images/screenshot-precisetracker.png') no-repeat center center fixed;
   background-size: cover;
 }
 
 
-.card-header.two {
+.card-header.three {
   background: url('../images/mealhub.png') no-repeat center center fixed;
   background-size: cover;
 }
 
-.card-header.three {
-  background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+.card-header.four {
+  background: url('../images/youtube.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.card-header.one {
+  background: url('../images/hilo.png') no-repeat center center fixed;
+  background-size: cover;
 }

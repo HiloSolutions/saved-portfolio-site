@@ -26,22 +26,16 @@ const PortfolioPage = () => {
     };
   }, []);
 
-  const keys = [];
 
   const buildCards = Object.keys(data).map((key) => {
     const item = data[key];
 
-    keys.push(key)
-
-    let classNameHeader = 'card-header '
-    if (key === '1') classNameHeader = 'card-header one';
-    if (key === '2') classNameHeader = 'card-header two';
-    if (key === '3') classNameHeader = 'card-header three';
+  
 
 
     return (
-      <article className="card-wrap" key={`${item}${Math.floor(Math.random() * 10) + 1}`}>
-        <div className={classNameHeader}>
+      <article className="card-wrap" key={key}>
+        <div className={`card-header ${item.classNameHeader}`}>
           <i className="fas fa-code"></i>
         </div>
         <div className="card-content">
@@ -55,6 +49,7 @@ const PortfolioPage = () => {
             backEnd={item.backEnd}
             leveragedSoftware={item.leveragedSoftware}
             github={item.github}
+            cta={item.cta}
           />
         </div>
       </article>

@@ -23,7 +23,6 @@ This project was designed to demonstrate:
 
 ## Usage example
 
-### Home Page
 ![portfolio home](./images/screenshot-portfolio-home.png)
 
 ### My Skills
