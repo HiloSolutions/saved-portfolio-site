@@ -4,10 +4,14 @@
   letter-spacing: 3px;
 }
 
-.carousel-heading span {
-  color: #44b8b8;
+.about .carousel-heading span {
+  color: #b86144 ;
 }
 
-.about .card-title{
-  color: rgb(23, 113, 119);
+.timeline-item h2 {
+  color: #b86144 ;
+}
+
+.about .skills-section {
+  color: #b86144;
 }

@@ -43,7 +43,7 @@ const PortfolioPage = () => {
     return (
       <article className="portfolio-card" key={key}>
         <div className={`card-header ${item.classNameHeader}`}>
-          <i className="fas fa-code"></i>
+         
         </div>
         <div className="card-content">
           <h1 className="card-title">{item.title}</h1>

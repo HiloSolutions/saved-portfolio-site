@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import TypingAnimation from '../components/TypedText';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
@@ -19,12 +19,8 @@ import { GrPersonalComputer } from 'react-icons/gr';
 import '../styles/about.css';
 
 
-const AboutPage = ({
-  primaryColor,
-  secondaryColor,
-  accentColor
-}) => {
-  const contactRef = useRef(null);
+const AboutPage = () => {
+  
 
 
   const [top, setTop] = useState('auto');
@@ -48,11 +44,10 @@ const AboutPage = ({
 
    //****** Color Circle */
    const colors = [
-    { r: 128, g: 255, b: 219 }, //Sea green
-    { r: 40, g: 191, b: 201 }, //light blue
-    { r: 68, g: 184, b: 184 }, //darker blue
-    { r: 255, g: 213, b: 0 }, //light purple
-    { r: 29, g: 222, b: 206 } //purple
+    { r: 184, g: 68, b: 97 }, //pink
+    { r: 184, g: 155, b: 68 }, //gold
+    { r: 184, g: 155, b: 68 }, //gold
+    { r: 68, g: 184, b: 184 }, //teal
   ];
 
 
@@ -94,7 +89,7 @@ const AboutPage = ({
 
   return (
     <div className='about'>
-      <NavBar color=""/>
+      <NavBar color="#b86144"/>
       <SideBar />
       <Header colors={colors}/>
       <div
@@ -102,7 +97,7 @@ const AboutPage = ({
         style={{ top: top }}
       >
         <div className="carousel-heading">
-          <h2>my<span>Story</span></h2>
+          <h2>My<span> Story</span></h2>
           <TypingAnimation text="How passion led to full-stack web development." />
         </div>
 

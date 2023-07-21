@@ -56,10 +56,11 @@ const AnimatedTextWord = ({ text }) => {
           variants={child}
           style={
             { 
-              color: '#177177',
+              color: '#b89b44',
               marginRight: "5px",
-              fontSize: 30,
-              fontFamily: "'Barlow Condensed', sans-serif",
+              marginTop: "30px",
+              fontSize: 35,
+              fontFamily: 'Cabin Sketch',
               letterSpacing: '-0.005em',
               fontWeight: 400 
             }

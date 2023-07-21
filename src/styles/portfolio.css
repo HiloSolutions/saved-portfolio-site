@@ -8,9 +8,9 @@
   color: #6144b8;
 }
 
-.portfolio .card-title{
+.portfolio .card-title {
   color: #6144b8;
-  font-size: 25px;
+  font-size: 37px;
   margin-bottom: 6px;
 }
 
@@ -20,10 +20,11 @@
 
 .portfolio .card-text {
   padding: 0 10px;
+  line-height: 1.6;
+  font-size: 18;
 }
 
-.portfolio 
-.card-container {
+.portfolio .card-container {
   width: 100%;
   display: flex;
   align-items: center;
@@ -34,11 +35,10 @@
 
 
 .portfolio-card {
-  width: 420px;
-  background-color: rgba(255, 255,255, 0.8);
-background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  max-width: 420px;
+  background-color: rgba(236, 233, 247, 0.8);
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
   border-radius: 5px;
-  border: 5px solid #fff;
   overflow: hidden;
   color: var(--color-text);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -58,7 +58,7 @@ background-image: url("https://www.transparenttextures.com/patterns/paper-fibers
 
 .card-header {
   height: 280px;
-  width: 420px;
+  min-width: 420px;
   border-radius: 5px;
   margin-bottom: 1em;
   display: grid;
@@ -67,6 +67,9 @@ background-image: url("https://www.transparenttextures.com/patterns/paper-fibers
   transition: transform 0.2s ease-in-out
 }
 
+.card-header i {
+  width: 100%;
+}
 .card-header.two {
   background: url('../images/screenshot-precisetracker.png') no-repeat center center fixed;
   background-size: cover;

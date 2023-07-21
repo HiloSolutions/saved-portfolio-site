@@ -4,7 +4,7 @@ import { Paper, Button } from '@mui/material';
 
 function TimelineItem(props) {
   return (
-    <div>
+    <div className='timeline-item'>
       <Paper>
         <h2>{props.item.name}</h2>
         <p>{props.item.description}</p>
