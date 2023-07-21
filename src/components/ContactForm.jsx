@@ -76,7 +76,7 @@ const ContactForm = ({ variant }) => {
   return (
     <>
       <div className="carousel-heading">
-        <h2>Contact <span>Me</span></h2>
+        <h2>Get in touch</h2>
       </div>
       <Box
         component="form"
@@ -140,9 +140,8 @@ const ContactForm = ({ variant }) => {
                       style={{
                         marginLeft: '13px',
                         border: 'none',
-                        color: '#000',
-                        backgroundImage: 'linear-gradient(to right, #ffb347 0%, #ffcc33  100%)',
-                        backgroundSize: '200% auto',
+                        color: '#fff',
+                        backgroundColor: '#b86144'
                       }}
                     >
                       Send Message

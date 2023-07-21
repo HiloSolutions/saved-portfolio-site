@@ -39,6 +39,7 @@ export default function NavBar( {color} ) {
         padding: '10px 0px',
         height: 56,
         backgroundColor: color,
+        backgroundImage: 'url("https://www.transparenttextures.com/patterns/french-stucco.png")',
         boxShadow: '0 1px 8px rgba(0,0,0,0.3)',
         zIndex: 100,
         width: '100%'

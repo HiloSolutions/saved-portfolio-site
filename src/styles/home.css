@@ -21,33 +21,28 @@
 }
 
 
-.skills-box-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
 .home-card {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255,255, 0.8);
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
 }
 
-.skills-box {
-  margin-top: 5em;
-  margin-bottom: 1em;
-  background-color: 
-  #f4f3f1;
-  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
-  border-radius: 0.5em;
-  padding: 2em;
+.home-bio-services article{
+  display: flex;
+  padding: 0 20px 0;
+  max-height: 200px;
+  overflow: scroll;
+  gap: 20px;
 }
+
+.home-card img {
+  width: 200px;
+  margin-left: -20px;
+  min-height: 200px;
+}
+
 
 .skills-section {
-  font-size: 25px;
-  letter-spacing: 0.2px;
-  font-weight: 500;
-  font-family: "Lato", sans-serif;
-  color: rgb(43, 22, 27)
+  color: rgb(23, 113, 119);
 }
 
 .skill-box-container {
@@ -101,7 +96,7 @@
   width: 500px;
   height: 625px;
   border-radius: 0.5em;
-  border: 0.5em solid white;
+  
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -112,6 +107,8 @@
 
 .home-bio-paragraph-content p {
   padding: 0 25px;
+  font-size: 18px;
+  line-height: 1.85;
 }
 
 .home-bio-paragraph-content:hover {

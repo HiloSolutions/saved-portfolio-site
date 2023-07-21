@@ -13,6 +13,29 @@
   padding: 0 5em;
 }
 
+.skills-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin: 15em 0;
+  background-color: rgba(255, 255,255, 0.5);
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+}
+
+.skills-box {
+  border-radius: 0.5em;
+  padding: 2em;
+}
+
+.skills-section {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+
 .carousel-heading {
   text-align: center;
   margin-bottom: 5px;
@@ -22,7 +45,7 @@
 h2,
 .home span {
 
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -48,15 +71,14 @@ h2,
   text-align: center;
   padding: 0 20px;
   line-height: 1.1;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 20px;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
+  font-family: "Caveat", sans-serif;
 }
 
 .card-text {
   text-align: center;
-  font-size: 18px;
+  font-size: 16.5px;
   margin-bottom: 20px;
 }
 

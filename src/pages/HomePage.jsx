@@ -8,14 +8,12 @@ import homeProfilePicture from '../images/homeProfilePicture2.png';
 import servicesObject from '../scripts/servicesObject';
 import SkillsBox from '../components/SkillsBox';
 import '../styles/home.css';
+import  web from '../images/web.jpeg'
+import  crm from '../images/crm.jpeg'
+import  combo from '../images/combo.jpeg'
 
 
-
-const HomePage = ({
-  primaryColor,
-  secondaryColor,
-  accentColor
-}) => {
+const HomePage = () => {
 
   const [top, setTop] = useState('auto');
 
@@ -34,8 +32,8 @@ const HomePage = ({
   }, []);
 
 
-   //****** Color Circle */
-   const colors = [
+  //****** Color Circle */
+  const colors = [
     { r: 128, g: 255, b: 219 }, //Sea green
     { r: 40, g: 191, b: 201 }, //light blue
     { r: 68, g: 184, b: 184 }, //darker blue
@@ -45,21 +43,35 @@ const HomePage = ({
 
   const displayServices = Object.keys(servicesObject).map((key) => {
     const item = servicesObject[key];
+    let icon = "";
+
+    if (item.icon === "web") {
+      icon = web;
+    } else if (item.icon === "combo") {
+      icon = combo;
+    } else {
+      icon = crm;
+    }
 
     return (
       <article
         className='services-article home-card'
         key={item.key}
       >
-        <h1
-          className="card-title"
-          style={{ margin: '0.5em, 0, 0, 0' }}
-        >
-          {item.serviceName}
-        </h1>
-        <p className="card-text">
-          {item.description}
-        </p>
+        <div>
+          <img src={icon} alt="icon" />
+        </div>
+        <div>
+          <h1
+            className="card-title"
+            style={{ margin: '0.5em, 0, 0, 0' }}
+          >
+            {item.serviceName}
+          </h1>
+          <p className="card-text">
+            {item.description}
+          </p>
+        </div>
       </article>
     );
   });
@@ -68,9 +80,9 @@ const HomePage = ({
 
   return (
     <div>
-      <NavBar color="#44B8B8"/>
+      <NavBar color="#44B8B8" />
       <SideBar />
-      <Header colors={colors}/>
+      <Header colors={colors} />
       <div className='page-body'
         style={{ top: top }}
       >
@@ -78,8 +90,8 @@ const HomePage = ({
           <h2>Lauren <span>Johnston</span></h2>
         </div>
 
-        <SectionStart color="#44B8B8"/>
-        <div style={{ marginTop: '4em', marginBottom: '1em' }} />
+        <SectionStart color="#44B8B8" />
+        <div style={{ marginTop: '3em', marginBottom: '1em' }} />
 
         <div className='home-bio'>
 
@@ -97,7 +109,7 @@ const HomePage = ({
           <div className='home-bio-paragraph'>
             <div className='home-bio-paragraph-content home-card taped-card'>
 
-              <h1 className="card-title">Web Development Specialist</h1>
+              <h1 className="card-title">Software Developer</h1>
 
               <p>Hi, I'm Lauren. I am a software developer based in Alberta, Canada. I previously worked as a project manager and coach to over 100 clients.</p>
 
@@ -105,7 +117,7 @@ const HomePage = ({
 
               <p>When I'm not coding, I enjoy staying active through running and rock climbing. I am also a cat lover. I have a furry companion named Yennefer who I rescued from the street. Yennefer is quite the coding assistant too - she has a habit of walking all over my keyboard when I'm working!</p>
             </div>
-            
+
           </div>
         </div>
 
