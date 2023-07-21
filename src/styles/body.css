@@ -1,5 +1,6 @@
 .page-body {
   position: absolute;
+  box-sizing: border-box;
   width: 100%;
   z-index: 100;
   background-color: rgb(255, 255, 255);
@@ -7,6 +8,7 @@
   height: auto;
   min-height: 100% !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 0 5em;
 }
 
 .carousel-heading {
@@ -31,11 +33,7 @@
   justify-content: center;
 }
 
-.home-bio-services,
-.home-bio-paragraph {
-  flex: 1;
-  margin-top: 2em;
-}
+
 
 .services-article,
 .home-bio-paragraph-content {
@@ -47,37 +45,8 @@
   border-radius: 0.5em;
 }
 
-.home-bio-picture {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.home-bio-picture img {
-  transition: all .2s ease-in-out;
-  width: 90%;
-  height: auto;
-  border-radius: 3em;
-  border: 0.5em solid white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
 
-.home-bio-paragraph-content {
-  display: 'flex-column';
-}
-
-.home-bio-paragraph-content p {
-  font-size: 14.5px;
-}
-
-.home-bio-paragraph-content:hover {
-  transform: scale(1.05);
-}
-
-.home-picture:hover {
-  transform: scale(1.05);
-}
 
 :root {
   --color-text: #616161;
@@ -147,7 +116,9 @@
 .card-title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 25px;
+  padding: 0 20px;
+  line-height: 1.1;
+  font-size: 35px;
   margin-top: 10px;
   margin-bottom: 20px;
   color: rgb(23, 113, 119);
@@ -156,7 +127,7 @@
 
 .card-text {
   text-align: center;
-  font-size: 14.5px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 

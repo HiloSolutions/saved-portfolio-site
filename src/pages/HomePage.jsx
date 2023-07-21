@@ -45,13 +45,7 @@ const HomePage = () => {
         >
           {item.serviceName}
         </h1>
-        <p
-          className="card-text"
-          style={{
-            fontSize: '12.5px',
-            margin: '0, 0, 0, 0.5em'
-          }}
-        >
+        <p className="card-text">
           {item.description}
         </p>
       </article>
