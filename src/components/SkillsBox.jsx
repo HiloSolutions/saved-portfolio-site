@@ -39,9 +39,6 @@ const SkillsBox = () => {
   return (
     <div className='skills-box-container'>
       <div className='skills-box'>
-        <div className="carousel-heading">
-          <h2>My <span>Skills</span></h2>
-        </div>
         <Grid
           alignItems="center"
           container spacing={2}

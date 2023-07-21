@@ -8,6 +8,8 @@ import SectionStart from '../components/elements/SectionStart';
 import data from '../scripts/portfolioItems';
 import PortfolioItemModal from '../components/elements/PortfolioItemModal';
 import '../styles/body.css';
+import '../styles/portfolio.css';
+
 
 const PortfolioPage = () => {
   const [top, setTop] = useState('auto');
@@ -26,15 +28,20 @@ const PortfolioPage = () => {
     };
   }, []);
 
+  const colors = [
+    { r: 97, g: 68, b: 184 }, //light purple
+    { r: 97, g: 68, b: 184 }, //light purple
+    { r: 241, g: 198, b: 255}, //pink
+    { r: 29, g: 222, b: 206 } //blue
+  ];
+
 
   const buildCards = Object.keys(data).map((key) => {
     const item = data[key];
 
-  
-
 
     return (
-      <article className="card-wrap" key={key}>
+      <article className="portfolio-card" key={key}>
         <div className={`card-header ${item.classNameHeader}`}>
           <i className="fas fa-code"></i>
         </div>
@@ -58,10 +65,10 @@ const PortfolioPage = () => {
 
 
   return (
-    <div>
-      <NavBar />
+    <div className='portfolio'>
+      <NavBar color="#6144B8"/>
       <SideBar />
-      <Header />
+      <Header colors={colors}/>
       <div
         className='page-body'
         style={{ top: top }}
@@ -69,9 +76,9 @@ const PortfolioPage = () => {
 
         <div>
           <div className="carousel-heading">
-            <h2>my <span>Projects</span></h2>
+            <h2>My <span>Projects</span></h2>
           </div>
-          <SectionStart />
+          <SectionStart color="#6144B8"/>
           <div style={{ marginTop: '5em' }}></div>
 
           <div className="card-container">

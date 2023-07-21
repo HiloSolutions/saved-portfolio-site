@@ -1,10 +1,25 @@
 import React from 'react';
-import '../../styles/nav.css';
+import '../../styles/SectionStart.css';
 
-function SectionStart() {
+function SectionStart({ color }) {
+  
+  const boxStyle = {
+    borderBottom: `4px solid ${color}` 
+  }
+
+  const arrowStyle = {
+    borderTop: `18px solid ${color}` 
+  }
+  
   return (
-    <div className="box">
-      <div className="arrow-down"></div>
+    <div
+      className="box"
+      style={boxStyle}
+    >
+      <div
+        className="arrow-down"
+        style={arrowStyle}
+      ></div>
     </div>
 
   );

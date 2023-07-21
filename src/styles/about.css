@@ -1,0 +1,13 @@
+.carousel-heading h2,
+.carousel-heading span {
+
+  letter-spacing: 3px;
+}
+
+.carousel-heading span {
+  color: #44b8b8;
+}
+
+.about .card-title{
+  color: rgb(23, 113, 119);
+}

@@ -2,8 +2,10 @@
   position: absolute;
   box-sizing: border-box;
   width: 100%;
-  z-index: 100;
   background-color: rgb(255, 255, 255);
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-repeat: 'repeat';
+  z-index: 100;
   overflow: hidden;
   height: auto;
   min-height: 100% !important;
@@ -14,35 +16,15 @@
 .carousel-heading {
   text-align: center;
   margin-bottom: 5px;
+  font-family: 'Seaweed Script', cursive;
 }
 
-.carousel-heading h2,
-.carousel-heading span {
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
+h2,
+.home span {
 
-.carousel-heading span {
-  color: #44b8b8;
-}
-
-.home-bio {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-
-
-.services-article,
-.home-bio-paragraph-content {
-  transition: all .2s ease-in-out;
-  width: 90%;
-  padding: 0.25em;
-  margin: auto auto 2em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 0.5em;
+  font-size: 100px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 
@@ -62,67 +44,14 @@
 }
 
 
-
-.card-container {
-  width: 100%;
-  padding: 5px 20px 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-
-.card-wrap {
-  width: 330px;
-  padding: 5px, 0px;
-  background: #fff;
-  border-radius: 20px;
-  border: 5px solid #fff;
-  overflow: hidden;
-  color: var(--color-text);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-    rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  cursor: pointer;
-  transition: all .2s ease-in-out;
-}
-
-.card-wrap:hover {
-  transform: scale(1.1);
-}
-
-.card-header {
-  height: 200px;
-  width: 100%;
-  border-radius: 8px;
-  display: grid;
-  place-items: center;
-  transform: scale(0.909);
-  transition: transform 0.2s ease-in-out
-}
-
-.card-header i {
-  color: #fff;
-  font-size: 72px;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}
-
 .card-title {
   text-align: center;
-  text-transform: uppercase;
   padding: 0 20px;
   line-height: 1.1;
-  font-size: 35px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: rgb(23, 113, 119);
-  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
 }
 
 .card-text {
@@ -133,28 +62,7 @@
 
 .card-btn {
   border: none !important;
-  color: #616771 !important;
+  color: rgb(166, 160, 184) !important;
   margin-bottom: 15px !important;
   text-transform: uppercase !important;
-}
-
-.card-header.two {
-  background: url('../images/screenshot-precisetracker.png') no-repeat center center fixed;
-  background-size: cover;
-}
-
-
-.card-header.three {
-  background: url('../images/mealhub.png') no-repeat center center fixed;
-  background-size: cover;
-}
-
-.card-header.four {
-  background: url('../images/youtube.png') no-repeat center center fixed;
-  background-size: cover;
-}
-
-.card-header.one {
-  background: url('../images/hilo.png') no-repeat center center fixed;
-  background-size: cover;
 }

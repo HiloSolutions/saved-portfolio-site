@@ -9,7 +9,7 @@ import "../styles/nav.css";
 
 
 
-export default function NavBar( {executeScroll} ) {
+export default function NavBar( {color} ) {
   const [shouldRender, setShouldRender] = useState(false);
 
 
@@ -38,7 +38,7 @@ export default function NavBar( {executeScroll} ) {
         fontWeight: 600,
         padding: '10px 0px',
         height: 56,
-        backgroundColor: '#44B8B8',
+        backgroundColor: color,
         boxShadow: '0 1px 8px rgba(0,0,0,0.3)',
         zIndex: 100,
         width: '100%'

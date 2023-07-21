@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import AboutPage from "./pages/AboutPage";
 import "./App.css";
+import "./styles/CustomFont.css";
 
 
 
@@ -11,7 +12,7 @@ import "./App.css";
 
 function App() {
 
-  
+
 
   return (
     <Router>
@@ -19,15 +20,21 @@ function App() {
 
         <Route
           path="/"
-          element={<HomePage />}
+          element={
+            <HomePage />
+          }
         />
         <Route
           path="/portfolio"
-          element={<PortfolioPage />}
+          element={
+            <PortfolioPage />
+          }
         />
         <Route
           path="/about"
-          element={<AboutPage />}
+          element={
+            <AboutPage />
+          }
         />
       </div>
 

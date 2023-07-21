@@ -62,6 +62,7 @@ const PortfolioItemModal = ({
       <Button
         className='card-btn'
         onClick={handleOpen}
+        sx={{"&:hover": {backgroundColor: "transparent", }}}
       >View Details</Button>
       <Modal
         open={open}

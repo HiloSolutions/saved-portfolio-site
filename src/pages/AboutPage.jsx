@@ -16,9 +16,14 @@ import { FaRunning } from 'react-icons/fa';
 import { FaAward } from 'react-icons/fa';
 import { MdOutlineSchool } from 'react-icons/md';
 import { GrPersonalComputer } from 'react-icons/gr';
+import '../styles/about.css';
 
 
-const AboutPage = () => {
+const AboutPage = ({
+  primaryColor,
+  secondaryColor,
+  accentColor
+}) => {
   const contactRef = useRef(null);
 
 
@@ -39,6 +44,16 @@ const AboutPage = () => {
     };
   }, []);
 
+
+
+   //****** Color Circle */
+   const colors = [
+    { r: 128, g: 255, b: 219 }, //Sea green
+    { r: 40, g: 191, b: 201 }, //light blue
+    { r: 68, g: 184, b: 184 }, //darker blue
+    { r: 255, g: 213, b: 0 }, //light purple
+    { r: 29, g: 222, b: 206 } //purple
+  ];
 
 
   const createTemelineItems = Object.keys(data).map((key) => {
@@ -78,10 +93,10 @@ const AboutPage = () => {
 
 
   return (
-    <div>
-      <NavBar />
+    <div className='about'>
+      <NavBar color=""/>
       <SideBar />
-      <Header />
+      <Header colors={colors}/>
       <div
         className='page-body'
         style={{ top: top }}

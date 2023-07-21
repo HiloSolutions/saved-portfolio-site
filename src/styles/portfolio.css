@@ -1,0 +1,84 @@
+.carousel-heading h2,
+.carousel-heading span {
+  letter-spacing: 3px;
+}
+
+
+.portfolio .carousel-heading span {
+  color: #6144b8;
+}
+
+.portfolio .card-title{
+  color: #6144b8;
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+
+.portfolio .card-text {
+  padding: 0 10px;
+}
+
+.portfolio 
+.card-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+
+.portfolio-card {
+  width: 420px;
+  background: #fff;
+  border-radius: 5px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  color: var(--color-text);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.1);
+}
+
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header {
+  height: 280px;
+  width: 420px;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  display: grid;
+  place-items: center;
+  transform: scale(0.909);
+  transition: transform 0.2s ease-in-out
+}
+
+.card-header.two {
+  background: url('../images/screenshot-precisetracker.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.card-header.three {
+  background: url('../images/mealhub.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.card-header.four {
+  background: url('../images/youtube.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.card-header.one {
+  background: url('../images/hilo.png') no-repeat center center fixed;
+  background-size: cover;
+}

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-function Header() {
+function Header({colors}) {
   const [shouldRender, setShouldRender] = useState(false);
   const canvasRef = useRef(null);
 
@@ -26,14 +26,6 @@ function Header() {
     const context = canvas.getContext('2d');
     let animationFrameId;
 
-    //****** Color Circle */
-    const colors = [
-      { r: 128, g: 255, b: 219 }, //Sea green
-      { r: 40, g: 191, b: 201 }, //light blue
-      { r: 68, g: 184, b: 184 }, //darker blue
-      { r: 255, g: 213, b: 0 }, //light purple
-      { r: 29, g: 222, b: 206 } //purple
-    ];
 
     const getColor = () => {
       const color = colors[Math.floor(Math.random() * colors.length)];
@@ -43,7 +35,7 @@ function Header() {
 
     // Define Ball class
     class Ball {
-      constructor(x, y, radius, color) {
+      constructor(x, y, radius) {
         this.x = x;
         this.y = y;
         this.radius = radius;
@@ -70,10 +62,10 @@ function Header() {
 
     // Build Array of Circles
     const buildCirclesArray = new Array();
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 400; i++) {
       const x = Math.random() * canvas.width;
       const y = Math.random() * canvas.height;
-      const radius = 100;
+      const radius = 200;
       const color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
       buildCirclesArray.push(new Ball(x, y, radius, color));
     }
@@ -131,7 +123,8 @@ function Header() {
       cancelAnimationFrame(animationFrameId);
       window.removeEventListener('resize', resizeCanvas);
     };
-  }, []);
+  });
+
 
   return shouldRender ? (
     <canvas ref={canvasRef}
@@ -144,7 +137,7 @@ function Header() {
   style={{
     width: '100%',
     maxWidth: '100%',
-    filter: 'blur(90px)',
+    filter: 'blur(90px)'
   }} />;
 }
 

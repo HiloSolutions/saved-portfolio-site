@@ -4,14 +4,18 @@ import NavBar from '../components/NavBar';
 import SideBar from '../components/SideBar';
 import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
-import homeProfilePicture from '../images/homeProfilePicture.jpg';
+import homeProfilePicture from '../images/homeProfilePicture2.png';
 import servicesObject from '../scripts/servicesObject';
 import SkillsBox from '../components/SkillsBox';
 import '../styles/home.css';
 
 
 
-const HomePage = () => {
+const HomePage = ({
+  primaryColor,
+  secondaryColor,
+  accentColor
+}) => {
 
   const [top, setTop] = useState('auto');
 
@@ -30,13 +34,21 @@ const HomePage = () => {
   }, []);
 
 
+   //****** Color Circle */
+   const colors = [
+    { r: 128, g: 255, b: 219 }, //Sea green
+    { r: 40, g: 191, b: 201 }, //light blue
+    { r: 68, g: 184, b: 184 }, //darker blue
+    { r: 255, g: 213, b: 0 }, //light purple
+    { r: 29, g: 222, b: 206 } //purple
+  ];
 
   const displayServices = Object.keys(servicesObject).map((key) => {
     const item = servicesObject[key];
 
     return (
       <article
-        className='services-article'
+        className='services-article home-card'
         key={item.key}
       >
         <h1
@@ -56,17 +68,17 @@ const HomePage = () => {
 
   return (
     <div>
-      <NavBar />
+      <NavBar color="#44B8B8"/>
       <SideBar />
-      <Header />
+      <Header colors={colors}/>
       <div className='page-body'
         style={{ top: top }}
       >
-        <div className="carousel-heading">
+        <div className="carousel-heading home">
           <h2>Lauren <span>Johnston</span></h2>
         </div>
 
-        <SectionStart />
+        <SectionStart color="#44B8B8"/>
         <div style={{ marginTop: '4em', marginBottom: '1em' }} />
 
         <div className='home-bio'>
@@ -83,7 +95,7 @@ const HomePage = () => {
           </div>
 
           <div className='home-bio-paragraph'>
-            <div className='home-bio-paragraph-content'>
+            <div className='home-bio-paragraph-content home-card taped-card'>
 
               <h1 className="card-title">Web Development Specialist</h1>
 
@@ -93,6 +105,7 @@ const HomePage = () => {
 
               <p>When I'm not coding, I enjoy staying active through running and rock climbing. I am also a cat lover. I have a furry companion named Yennefer who I rescued from the street. Yennefer is quite the coding assistant too - she has a habit of walking all over my keyboard when I'm working!</p>
             </div>
+            
           </div>
         </div>
 
