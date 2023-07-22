@@ -8,21 +8,6 @@
   color: #6144b8;
 }
 
-.portfolio .card-title {
-  color: #6144b8;
-  font-size: 37px;
-  margin-bottom: 6px;
-}
-
-.portfolio .skills-section {
-  color: #6144b8;
-}
-
-.portfolio .card-text {
-  padding: 0 10px;
-  line-height: 1.6;
-  font-size: 18;
-}
 
 .portfolio .card-container {
   width: 100%;
@@ -33,60 +18,7 @@
   gap: 3em;
 }
 
-
-.portfolio-card {
-  max-width: 420px;
-  background-color: rgba(236, 233, 247, 0.8);
-  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-  border-radius: 5px;
-  overflow: hidden;
-  color: var(--color-text);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  transition: all .2s ease-in-out;
-}
-
-.portfolio-card:hover {
-  transform: scale(1.1);
-}
-
-
-.card-content {
+.top-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card-header {
-  height: 280px;
-  min-width: 420px;
-  border-radius: 5px;
-  margin-bottom: 1em;
-  display: grid;
-  place-items: center;
-  transform: scale(0.909);
-  transition: transform 0.2s ease-in-out
-}
-
-.card-header i {
-  width: 100%;
-}
-.card-header.two {
-  background: url('../images/screenshot-precisetracker.png') no-repeat center center fixed;
-  background-size: cover;
-}
-
-
-.card-header.three {
-  background: url('../images/mealhub.png') no-repeat center center fixed;
-  background-size: cover;
-}
-
-.card-header.four {
-  background: url('../images/youtube.png') no-repeat center center fixed;
-  background-size: cover;
-}
-
-.card-header.one {
-  background: url('../images/hilo.png') no-repeat center center fixed;
-  background-size: cover;
+  justify-content: center;
 }

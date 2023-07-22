@@ -1,0 +1,37 @@
+.modal-container {
+  background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+}
+
+.card-btn {
+  border: none !important;
+  color: #8068c7!important;
+  text-transform: uppercase;
+  font-size: 2rem !important;
+  font-family: 'Nothing You Could Do', cursive !important;
+}
+
+.title {
+  color: #6144b8;
+  font-weight: bold;
+  font-size: 37px;
+ text-align: center;
+  font-family: 'Nothing You Could Do', cursive !important;
+}
+
+.label {
+  font-size: 24px;
+  font-family: 'Nothing You Could Do', cursive;
+  color: #333;
+}
+
+.stack {
+  margin-top: 5rem;
+}
+
+.modal-description {
+  color: #333;
+  font-size: 18px;
+    line-height: 1.6;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}

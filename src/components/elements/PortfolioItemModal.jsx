@@ -8,10 +8,10 @@ import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
 import Chip from '@mui/material/Chip';
 import { FaGithub } from 'react-icons/fa';
+import '../../styles/modal.css'
 
 const PortfolioItemModal = ({
   title,
-  shortDescription,
   longDescription,
   frontEnd,
   backEnd,
@@ -30,21 +30,22 @@ const PortfolioItemModal = ({
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "70%",
+    width: "50%",
     maxHeight: "90%",
     bgcolor: "#fff",
-    borderRadius: "0.75em",
+    borderRadius: "8px",
     boxShadow: 24,
     overflow: 'scroll',
-    padding: 4,
+    padding: 5,
   };
 
 
   const buildChips = (arr) => {
     const chips = arr.map((item) => (
       <Chip
+
         label={item}
-        key={`${item}${Math.floor(Math.random() * 10) + 1}`}
+        key={`${item}`}
         style={{ marginLeft: '2px', marginTop: '5px' }}
       />
     ))
@@ -58,87 +59,58 @@ const PortfolioItemModal = ({
 
   return (
 
-    <div>
+    <div className='modal'>
       <Button
         className='card-btn'
         onClick={handleOpen}
-        sx={{"&:hover": {backgroundColor: "transparent", }}}
+        sx={{ "&:hover": { backgroundColor: "transparent", } }}
       >View Details</Button>
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        aria-describedby="modal-description"
       >
-        <Box sx={modalStyle}>
-          <Typography
-            id="modal-modal-title"
-            variant="h3"
-            align="center"
-            sx={{ textTransform: "uppercase", fontWeight: 'bold', fontSize: '2em' }}
-          >
-            {title}
-          </Typography>
-          <Typography className="modal-modal-description" sx={{ mt: 2 }}>
-            {shortDescription}
-          </Typography>
+        <Box className="modal-container" sx={modalStyle}>
+          <h2 className='title'>{title}</h2>
 
-          <Typography
-            id="modal-modal-title"
-            variant="h6"
-            component="h2"
-            sx={{ mt: 2, fontWeight: 'bold' }}
-          >
-            Description
-          </Typography>
-          <Typography
-            paragraph={true}
-            id="modal-modal-description"
-          >
-            {longDescription}
-          </Typography>
 
-          <Typography
-            id="modal-modal-title"
-            variant="h6"
-            component="h2"
-            sx={{ mt: 2, fontWeight: 'bold' }}
-          >
-            Stack
-          </Typography>
+          <h4 className='label'>Description</h4>
+          <p className="modal-description">{longDescription}</p>
+
+          <h4 className='label stack'>Stack</h4>
 
           <Grid
             alignItems="center"
             container spacing={2}
           >
 
-            {frontEnd && (
+           {frontEnd && (
               <>
-                <Grid item xs={3}>
-                  <Item sx={{ fontSize: '14px' }}>Front-end</Item>
-                </Grid>
-                <Grid item xs={9}>
-                  <Item>{buildChips(frontEnd)}</Item>
-                </Grid>
-              </>
-
+              <Grid item xs={3}>
+                <Item sx={{color: "#a08ed4", fontSize: '25px', fontFamily: "'Cabin Sketch', cursive" }}>Front-End</Item>
+              </Grid>
+              <Grid item xs={9}>
+                <Item>{buildChips(frontEnd)}</Item>
+              </Grid>
+            </>
             )}
 
             {backEnd && (
               <>
-                <Grid item xs={3}>
-                  <Item sx={{ fontSize: '14px' }}>Back-end</Item>
-                </Grid>
-                <Grid item xs={9}>
-                  <Item>{buildChips(backEnd)}</Item>
-                </Grid>
-              </>
+              <Grid item xs={3}>
+                <Item sx={{color: "#a08ed4", fontSize: '25px', fontFamily: "'Cabin Sketch', cursive" }}>Back-End</Item>
+              </Grid>
+              <Grid item xs={9}>
+                <Item>{buildChips(backEnd)}</Item>
+              </Grid>
+            </>
             )}
 
             {leveragedSoftware && (
               <>
                 <Grid item xs={3}>
-                  <Item sx={{ fontSize: '14px' }}>Leveraged Software</Item>
+                  <Item sx={{color: "#a08ed4", fontSize: '25px', fontFamily: "'Cabin Sketch', cursive" }}>Leveraged Software</Item>
                 </Grid>
                 <Grid item xs={9}>
                   <Item>{buildChips(leveragedSoftware)}</Item>
@@ -150,26 +122,12 @@ const PortfolioItemModal = ({
 
 
           {github && (
-            <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 4 }}>
-              <CTAButton
-                url={github}
-                icon={<FaGithub />}
-                label='GitHub'
-              />
-            </Typography>
+              <CTAButton url={github} icon={<FaGithub />} label='GitHub' />
           )}
 
           {cta && (
-            <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 4 }}>
-              <CTAButton
-                url={cta}
-                label='Go to site'
-              />
-            </Typography>
+              <CTAButton url={cta} label='Go to site' />
           )}
-
-
-
 
         </Box>
       </Modal>

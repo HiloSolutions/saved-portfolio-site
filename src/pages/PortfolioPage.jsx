@@ -6,9 +6,11 @@ import SkillsBox from '../components/SkillsBox';
 import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
 import data from '../scripts/portfolioItems';
-import PortfolioItemModal from '../components/elements/PortfolioItemModal';
+import PolaroidCard from '../components/elements/PolaroidCard';
 import '../styles/body.css';
 import '../styles/portfolio.css';
+import '../styles/PolaroidCard.css';
+
 
 
 const PortfolioPage = () => {
@@ -31,59 +33,51 @@ const PortfolioPage = () => {
   const colors = [
     { r: 97, g: 68, b: 184 }, //light purple
     { r: 97, g: 68, b: 184 }, //light purple
-    { r: 241, g: 198, b: 255}, //pink
+    { r: 241, g: 198, b: 255 }, //pink
     { r: 29, g: 222, b: 206 } //blue
   ];
 
-
-  const buildCards = Object.keys(data).map((key) => {
-    const item = data[key];
-
-
-    return (
-      <article className="portfolio-card" key={key}>
-        <div className={`card-header ${item.classNameHeader}`}>
-         
-        </div>
-        <div className="card-content">
-          <h1 className="card-title">{item.title}</h1>
-          <p className="card-text">{item.shortDescription}</p>
-          < PortfolioItemModal
-            title={item.title}
-            shortDescription={item.shortDescription}
-            longDescription={item.longDescription}
-            frontEnd={item.frontEnd}
-            backEnd={item.backEnd}
-            leveragedSoftware={item.leveragedSoftware}
-            github={item.github}
-            cta={item.cta}
-          />
-        </div>
-      </article>
-    );
-  });
+  const buildCards = () => {
+    return Object.keys(data).map((key, index) => (
+      <PolaroidCard
+        key={index}
+        classNameHeader={data[key].classNameHeader}
+        angle={data[key].angle}
+        x={data[key].x}
+        y={data[key].y}
+        caption={data[key].caption}
+        longDescription={data[key].longDescription}
+        frontEnd={data[key].frontEnd}
+        backEnd={data[key].backEnd}
+        leveragedSoftware={data[key].leveragedSoftware}
+        cta={data[key].cta}
+        github={data[key].github}
+        title={data[key].title}
+      />
+    ));
+  };
 
 
   return (
     <div className='portfolio'>
-      <NavBar color="#6144B8"/>
+      <NavBar color="#6144B8" />
       <SideBar />
-      <Header colors={colors}/>
+      <Header colors={colors} />
       <div
         className='page-body'
         style={{ top: top }}
       >
 
-        <div>
+        <div className='top-section'>
           <div className="carousel-heading">
             <h2>My <span>Projects</span></h2>
+            <SectionStart color="#6144B8" />
           </div>
-          <SectionStart color="#6144B8"/>
-          <div style={{ marginTop: '5em' }}></div>
 
-          <div className="card-container">
-            {buildCards}
+          <div className="polaroid-card-container">
+            {buildCards()}
           </div>
+
         </div>
 
         <SkillsBox />

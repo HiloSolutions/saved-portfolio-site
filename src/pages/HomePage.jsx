@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 import SideBar from '../components/SideBar';
 import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
-import homeProfilePicture from '../images/homeProfilePicture2.png';
+import homeProfilePicture from '../images/Home2.png';
 import servicesObject from '../scripts/servicesObject';
 import SkillsBox from '../components/SkillsBox';
 import '../styles/home.css';
