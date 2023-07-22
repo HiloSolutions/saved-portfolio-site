@@ -2,11 +2,9 @@ import React, { useState, useEffect } from 'react';
 import TypingAnimation from '../components/TypedText';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
-import SideBar from '../components/SideBar';
 import SkillsBox from '../components/SkillsBox';
 import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
-//import SubSectionStart from '../components/elements/SubSectionStart';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import data from '../scripts/timeline';
 import 'react-vertical-timeline-component/style.min.css';
@@ -90,7 +88,6 @@ const AboutPage = () => {
   return (
     <div className='about'>
       <NavBar color="#b86144"/>
-      <SideBar />
       <Header colors={colors}/>
       <div
         className='page-body'

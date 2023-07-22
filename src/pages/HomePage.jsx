@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
-import SideBar from '../components/SideBar';
 import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
 import homeProfilePicture from '../images/Home2.png';
@@ -81,7 +80,6 @@ const HomePage = () => {
   return (
     <div>
       <NavBar color="#44B8B8" />
-      <SideBar />
       <Header colors={colors} />
       <div className='page-body'
         style={{ top: top }}

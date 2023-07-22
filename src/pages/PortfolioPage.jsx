@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
-import SideBar from '../components/SideBar';
 import SkillsBox from '../components/SkillsBox';
 import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
@@ -61,7 +60,6 @@ const PortfolioPage = () => {
   return (
     <div className='portfolio'>
       <NavBar color="#6144B8" />
-      <SideBar />
       <Header colors={colors} />
       <div
         className='page-body'

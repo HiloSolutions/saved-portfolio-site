@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
@@ -10,30 +9,9 @@ import "../styles/nav.css";
 
 
 export default function NavBar( {color} ) {
-  const [shouldRender, setShouldRender] = useState(false);
 
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 800px)');
-    setShouldRender(mediaQuery.matches);
-
-    const handleMediaQueryChange = (e) => {
-      setShouldRender(e.matches);
-    }
-
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    };
-  }, []);
-
-
- 
-  
-  
-  return shouldRender ? (
+  return (
     <AppBar
-      //position="relative"
       style={{
         fontWeight: 600,
         padding: '10px 0px',
@@ -187,7 +165,6 @@ export default function NavBar( {color} ) {
       
       </Box>
     </AppBar>
-  ) :
-    null
+  )
 }
 

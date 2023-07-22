@@ -5,6 +5,7 @@
 .home-bio {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
 }
@@ -120,6 +121,7 @@
   flex: 1;
   font-size: 18px;
   line-height: 1.6;
+
 
 }
 
