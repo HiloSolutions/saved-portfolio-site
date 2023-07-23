@@ -7,7 +7,7 @@ const servicesObject =  {
   },
   2 : {
     key: 2,
-    serviceName: 'CRM Development',
+    serviceName: 'CRM',
     icon: 'crm',
     description:'Hubspot CRM Development and integration specific to your company.'
   },
@@ -15,7 +15,7 @@ const servicesObject =  {
     key: 3,
     serviceName: 'Combination',
     icon: 'combo',
-    description:"If you need both of those things, just shoot me a message and we'll figure something out together. No worries!."
+    description:"If you need both of those things, just shoot me a message!"
   }
 }
 
