@@ -34,6 +34,7 @@ import notion from '../images/notion.png';
 import shopify from '../images/shopify.png';
 import stripe from '../images/stripe.png';
 import teachable from '../images/teachable.png';
+import wordpress from '../images/wp.png';
 
 const SkillsBox = () => {
   return (
@@ -214,6 +215,11 @@ const SkillsBox = () => {
           <Grid item xs={9}>
             <Item>
               <div className='skill-box-container'>
+              <div className='skill-box'>
+                  <img className='skill-img' src={wordpress} alt="skill" />
+                  <p className='skill-name'>WordPress</p>
+                </div>
+
                 <div className='skill-box'>
                   <img className='skill-img' src={hubspot} alt="skill" />
                   <p className='skill-name'>HubSpot</p>
