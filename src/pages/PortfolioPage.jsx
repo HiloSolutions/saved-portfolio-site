@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import SkillsBox from '../components/SkillsBox';
-import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
 import data from '../scripts/portfolioItems';
 import PolaroidCard from '../components/elements/PolaroidCard';
@@ -79,7 +78,7 @@ const PortfolioPage = () => {
         </div>
 
         <SkillsBox />
-        <ContactForm variant='filled' />
+       
 
       </div>
     </div>

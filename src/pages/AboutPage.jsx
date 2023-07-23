@@ -3,7 +3,6 @@ import TypingAnimation from '../components/TypedText';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 import SkillsBox from '../components/SkillsBox';
-import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import data from '../scripts/timeline';
@@ -107,7 +106,7 @@ const AboutPage = () => {
         </div>
 
         <SkillsBox />
-        <ContactForm variant='filled'/>
+       
       </div>
 
     </div>

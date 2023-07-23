@@ -47,6 +47,3 @@ Go to the 'Portfolio' page to see my projects!
 GitHub is a great platform for showcasing my projects, but I wanted my website to present them in a way that's easy for people who aren't familiar with it. By clicking the "view details" button on each portfolio card, you can see the stack I used and a description of the project.
 ![portfolio project description](./images/project.png)
 
-### Contacts Me
-You can send me an email on my website. The contact form is found at the bottom of each page.
-![portfolio contact](./images/contact.png)

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import NavBar from '../components/NavBar';
-import ContactForm from '../components/ContactForm';
 import SectionStart from '../components/elements/SectionStart';
 import homeProfilePicture from '../images/Home2.png';
 import servicesObject from '../scripts/servicesObject';
@@ -113,7 +112,7 @@ const HomePage = () => {
         </div>
 
         <SkillsBox />
-        <ContactForm variant='filled' />
+       
       </div>
     </div >
   )
