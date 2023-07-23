@@ -105,7 +105,13 @@ const HomePage = () => {
 
               <h1 className="card-title">Software Developer</h1>
 
-              <p>Hi, I'm Lauren, a software developer in Alberta, Canada. I coached over 100 clients before transitioning into full-time development in 2021. I'm fascinated by the solutions our team creates. When not coding, I enjoy running, rock climbing, and being a cat lover. My rescued companion Yennefer is a helpful coding assistant, often walking on my keyboard!</p>
+              <p>Hi, I'm Lauren, a software developer in Alberta, Canada. I coached over 100 clients before transitioning into full-time development in 2021. I'm fascinated by the solutions our team creates.</p>
+              <p>
+              When not coding, I enjoy running, rock climbing, and playing with my cat. My rescued companion, Yennefer, is a helpful coding assistant, often walking on my keyboard!
+              </p>
+              <p>
+              I want this website to feel fun and creative. I hope you enjoy tha animations and textures just as much as I do.
+              </p>
             </div>
 
           </div>
