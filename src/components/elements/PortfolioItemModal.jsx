@@ -7,6 +7,7 @@ import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
 import Chip from '@mui/material/Chip';
 import { FaGithub } from 'react-icons/fa';
+
 import '../../styles/modal.css'
 
 const PortfolioItemModal = ({

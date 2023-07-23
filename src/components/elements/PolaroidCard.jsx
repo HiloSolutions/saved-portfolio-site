@@ -70,6 +70,7 @@ const PolaroidCard = ({
             github={github}
             cta={cta}
             onClose={closeModal}
+            isModalOpen={isModalOpen}
           />
         </div>
 
