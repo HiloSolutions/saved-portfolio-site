@@ -1,9 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-function Header({colors}) {
+function Header({ colors }) {
   const [shouldRender, setShouldRender] = useState(false);
   const canvasRef = useRef(null);
-
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 800px)');
@@ -19,19 +18,15 @@ function Header({colors}) {
     };
   }, []);
 
-
-
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
     let animationFrameId;
 
-
     const getColor = () => {
       const color = colors[Math.floor(Math.random() * colors.length)];
       return "rgb(" + color.r + "," + color.g + "," + color.b + ")";
     };
-
 
     // Define Ball class
     class Ball {
@@ -60,15 +55,15 @@ function Header({colors}) {
       }
     }
 
-    // Build Array of Circles
-    const buildCirclesArray = new Array();
-    for (let i = 0; i < 400; i++) {
+    // Build Array of Circles using array literal notation
+    const buildCirclesArray = Array.from({ length: 400 }, () => {
       const x = Math.random() * canvas.width;
       const y = Math.random() * canvas.height;
       const radius = 200;
       const color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
-      buildCirclesArray.push(new Ball(x, y, radius, color));
-    }
+      return new Ball(x, y, radius, color);
+    });
+
 
     // Blur effect in circles
     const createGradient = (ball) => {

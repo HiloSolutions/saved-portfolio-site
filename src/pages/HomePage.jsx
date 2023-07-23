@@ -61,10 +61,7 @@ const HomePage = () => {
           <img src={icon} alt="icon" />
         </div>
         <div>
-          <h1
-            className="card-title"
-            style={{ margin: '0.5em, 0, 0, 0' }}
-          >
+          <h1 className="card-title">
             {item.serviceName}
           </h1>
           <p className="card-text">
@@ -105,7 +102,7 @@ const HomePage = () => {
           </div>
 
           <div className='home-bio-paragraph'>
-            <div className='home-bio-paragraph-content home-card taped-card'>
+            <div className='home-bio-paragraph-content home-card'>
 
               <h1 className="card-title">Software Developer</h1>
 

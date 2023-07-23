@@ -30,7 +30,7 @@ const data = {
   3: {
     title: 'YouTube',
     caption: 'Tutorials for new devs.',
-    longDescription: "As a Web Developer with extensive experience in startups, I've curated these tutorials to teach the basics of the latest libraries, frameworks and softwares. You do not need to be a developer to benefit from these videos. I make two types of videos. The first type are basics of the languages I have learned through my career. The goal is to help new developers grasp concepts more quickly. The second videos are software solutions not involving code that help in the workplace. Sometime there is overlap in these videos where properly implementing these no-code solutions at the advanced level requires knowledge in the fundamentals of a language (ex. Javascript with HubSpot.)",
+    longDescription: "As a Web Developer with experience in startups, I've created tutorials to teach the basics of the latest libraries, frameworks, and software. These videos are designed to be accessible to everyone, regardless of their coding background. I offer two types of videos. The first type covers fundamental concepts of programming languages that I've learned throughout my career, aimed at helping new developers grasp concepts more easily. The second type focuses on software solutions that don't involve coding but are beneficial in the workplace. Occasionally, there may be some overlap in these videos. Implementing these no-code solutions effectively at an advanced level may require understanding the fundamentals of a specific language, like JavaScript with HubSpot.",
     leveragedSoftware: ['YouTube'],
     cta: 'https://www.youtube.com/@hilo-coding-tutorials',
     image:"/images/youtube.png",

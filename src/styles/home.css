@@ -15,7 +15,7 @@
 .home-bio-paragraph-content {
   box-sizing: border-box;
   transition: all .2s ease-in-out;
-  padding: 0 30px;
+  padding: 20 30px;
   margin: auto auto 1.5em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 0.5em;
@@ -29,14 +29,15 @@
 
 .home-bio-services article{
   display: flex;
+  align-items: center;
   padding: 0 20px 0;
-  max-height: 200px;
+  max-height: 190px;
   overflow: scroll;
   gap: 20px;
 }
 
 .home-card img {
-  width: 200px;
+  width: 190px;
   margin-left: -20px;
   min-height: 200px;
 }
@@ -84,7 +85,11 @@
 }
 
 
-
+.card-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: -15px;
+}
 
 .home-bio-picture {
   flex: 1;
@@ -97,7 +102,6 @@
   width: 500px;
   height: 625px;
   border-radius: 0.5em;
-  
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -107,7 +111,7 @@
 }
 
 .home-bio-paragraph-content p {
-  padding: 0 25px;
+  padding:0 25px;
   font-size: 18px;
   line-height: 1.85;
 }
@@ -125,10 +129,18 @@
 
 }
 
+.card-title {
+  text-align: center;
+  line-height: 1;
+  font-size: 35px;
+  margin-top: 20px;
+  font-family: "Caveat", sans-serif;
+}
+
 .home-card .card-title {
   color: rgb(23, 113, 119);
 }
 
 .home-card {
-  padding: 10px 20px;
+  padding: 10.5px 20px;
 }

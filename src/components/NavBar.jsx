@@ -50,7 +50,7 @@ export default function NavBar( {color} ) {
               style={{
                 letterSpacing: '2px',
                 color: '#ffffff',
-                fontFamily: "'Comfortaa', Helvetica, sans-serif"
+                fontFamily: "'Lato', Helvetica, sans-serif"
               }}
             ><strong>LAUREN JOHNSTON</strong>
             </span>
@@ -60,7 +60,7 @@ export default function NavBar( {color} ) {
                 fontSize: '12px',
                 lineHeight: '15px',
                 letterSpacing: '2.5px',
-                fontFamily: "'Comfortaa', Helvetica, sans-serif"
+                fontFamily: "'Lato', Helvetica, sans-serif"
               }}
             >
               HILO SOLUTIONS
@@ -97,7 +97,7 @@ export default function NavBar( {color} ) {
           >
             {
               <Link
-                style={{ textDecoration: 'none' }}
+                style={{ textDecoration: 'none', fontSize: '16px' }}
                 to={`/`}
               >
                 Home
@@ -125,7 +125,7 @@ export default function NavBar( {color} ) {
           >
             {
               <Link
-                style={{ textDecoration: 'none' }}
+                style={{ textDecoration: 'none', fontSize: '16px' }}
                 to={`/portfolio`}
               >
                 Portfolio
@@ -147,13 +147,13 @@ export default function NavBar( {color} ) {
               transition: 'color .2s ease-in-out',
               fontFamily: "'Comfortaa', Helvetica, sans-serif",
               paddingLeft: '0px',
-              paddingRight: '30px',
+              paddingRight: '2rem',
             }}
 
           >
             {
               <Link
-                style={{ textDecoration: 'none' }}
+                style={{ textDecoration: 'none', fontSize: '16px' }}
                 to={`/about`}
               >
                 About Me

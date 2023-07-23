@@ -1,0 +1,38 @@
+/* Styles for the CTA button */
+.cta-button {
+  background: transparent;
+  padding: 1rem 1rem;
+  width: 30%;
+  margin: 5rem 35% 0 35%;
+  color: #41403E;
+  font-size: 18px;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  border: solid 2px #41403E;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styles for the hover effect */
+.cta-button .hover-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+z-index: -1;
+  background-color: rgba(207, 198, 233, 0.7);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  transition: width 0.5s ease, height 0.5s ease;
+  
+}
+
+/* Hover effect when the button is hovered over */
+.cta-button:hover .hover-effect {
+  width: 95%;
+  height: 90%;
+}

@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import CTAButton from './CTAButton';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
