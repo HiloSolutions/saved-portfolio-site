@@ -7,9 +7,9 @@ import homeProfilePicture from '../images/Home2.png';
 import servicesObject from '../scripts/servicesObject';
 import SkillsBox from '../components/SkillsBox';
 import '../styles/home.css';
-import  web from '../images/web.jpeg'
-import  crm from '../images/crm.jpeg'
-import  combo from '../images/combo.jpeg'
+import web from '../images/web.jpeg'
+import crm from '../images/crm.jpeg'
+import combo from '../images/combo.jpeg'
 
 
 const HomePage = () => {
@@ -106,11 +106,7 @@ const HomePage = () => {
 
               <h1 className="card-title">Software Developer</h1>
 
-              <p>Hi, I'm Lauren. I am a software developer based in Alberta, Canada. I previously worked as a project manager and coach to over 100 clients.</p>
-
-              <p>Since 2018, I have worked in various software projects. As time progressed I became fascinated by the solutions produced by our development team. Finally, In 2021, I knew that I wanted to transition into a career as a full-time software developer.</p>
-
-              <p>When I'm not coding, I enjoy staying active through running and rock climbing. I am also a cat lover. I have a furry companion named Yennefer who I rescued from the street. Yennefer is quite the coding assistant too - she has a habit of walking all over my keyboard when I'm working!</p>
+              <p>Hi, I'm Lauren, a software developer in Alberta, Canada. I coached over 100 clients before transitioning into full-time development in 2021. I'm fascinated by the solutions our team creates. When not coding, I enjoy running, rock climbing, and being a cat lover. My rescued companion Yennefer is a helpful coding assistant, often walking on my keyboard!</p>
             </div>
 
           </div>
