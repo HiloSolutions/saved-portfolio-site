@@ -32,8 +32,12 @@
   align-items: center;
   padding: 0 20px 0;
   max-height: 190px;
-  overflow: scroll;
+  overflow: auto;
   gap: 20px;
+}
+
+.home-bio-services article > * {
+  flex-grow: 1;
 }
 
 .home-card img {
@@ -87,7 +91,7 @@
 
 .card-text {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: -15px;
 }
 
@@ -112,7 +116,7 @@
 
 .home-bio-paragraph-content p {
   padding:0 25px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.85;
 }
 
@@ -123,7 +127,7 @@
 .home-bio-services,
 .home-bio-paragraph {
   flex: 1;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
 
 
